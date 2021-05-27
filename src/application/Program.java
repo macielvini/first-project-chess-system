@@ -2,7 +2,6 @@ package application;
 
 import java.util.Locale;
 
-import boardgame.Board;
 import chess.ChessMatch;
 
 public class Program {
