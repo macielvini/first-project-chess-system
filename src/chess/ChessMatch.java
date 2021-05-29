@@ -5,6 +5,7 @@ import boardgame.Position;
 import chess.pieces.King;
 import chess.pieces.Rook;
 
+//classe responsavel pela partida de xadrez
 public class ChessMatch {
 	
 	private Board board;
@@ -14,10 +15,12 @@ public class ChessMatch {
 		initialSetup();
 	}
 	
+	//retorna matriz de peças correspondente a partida
 	public ChessPiece[][] getPieces(){
 		ChessPiece[][] mat = new ChessPiece[board.getRows()][board.getColumns()];
 		for(int i=0; i<board.getRows(); i++) {
 			for(int j=0; j<board.getColumns(); j++) {
+				//coloca uma ChessPiece conforme percorre a matriz
 				mat[i][j] = (ChessPiece) board.piece(i, j);
 			}
 		}
