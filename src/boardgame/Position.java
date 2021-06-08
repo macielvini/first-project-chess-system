@@ -20,13 +20,13 @@ public class Position {
 	}
 
 
-	public int getCollumn() {
+	public int getColumn() {
 		return column;
 	}
 
 
-	public void setCollumn(int collumn) {
-		this.column = collumn;
+	public void setColumn(int column) {
+		this.column = column;
 	}
 
 
